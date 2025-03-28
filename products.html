@@ -5,115 +5,106 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ädelt – Produkter</title>
-    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/common.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/products.css">
+    <link rel="stylesheet" href="css/animations.css">
 </head>
 
 <body>
-    <header>
-        <div class="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
+    <nav>
+        <div class="logo">
+            <span>Ädelt</span>
         </div>
-        <div class="logo">Ädelt</div>
-        <nav>
-            <ul class="nav-links">
-                <span class="close-menu">&times;</span>
-                <li><a href="index.html">Hem</a></li>
-                <li><a href="products.html" class="active">Produkter</a></li>
-                <li><a href="about.html">Om Oss</a></li>
-                <li><a href="contact.html">Kontakt</a></li>
-                <li><a href="sell.html">Sälj</a></li>
-            </ul>
-        </nav>
-    </header>
+        <ul class="nav-links">
+            <li><a href="index.html">Hem</a></li>
+            <li><a href="products.html">Produkter</a></li>
+            <li><a href="about.html" class="active">Om Oss</a></li>
+            <li><a href="sell.html">Sälj Smycken</a></li>
+            <li><a href="contact.html">Kontakt</a></li>
+        </ul>
+        <div class="nav-icons">
+            <div class="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
 
-    <main>
-        <section class="products-grid">
+    <main class="products-page">
+        <section class="products-header container">
+            <h1>Våra Smycken</h1>
+            <p>Unika second-hand smycken med historia och stil</p>
+        </section>
+
+        <section class="products-grid container">
             <div class="product-card">
-                <img src="images/product1.jpg" alt="Nyckelring">
-                <h3>Nyckelring</h3>
-                <p>Material: Koppar</p>
-                <p>Pris: 1 800 kr</p>
+                <img src="/api/placeholder/300/300" alt="Nyckelring">
+                <div class="product-details">
+                    <h3>Nyckelring</h3>
+                    <p>Material: Koppar</p>
+                    <p class="price">1 800 kr</p>
+                    <a href="#" class="btn btn-tertiary">Köp Nu</a>
+                </div>
             </div>
             <div class="product-card">
-                <img src="images/product2.jpg" alt="Halsband">
-                <h3>Halsband</h3>
-                <p>Material: Vitt Guld</p>
-                <p>Pris: 2500 kr</p>
+                <img src="/api/placeholder/300/300" alt="Halsband">
+                <div class="product-details">
+                    <h3>Halsband</h3>
+                    <p>Material: Vitt Guld</p>
+                    <p class="price">2 500 kr</p>
+                    <a href="#" class="btn btn-tertiary">Köp Nu</a>
+                </div>
             </div>
             <div class="product-card">
-                <img src="images/product3.jpg" alt="Smyckesörhänge">
-                <h3>Smyckesörhänge</h3>
-                <p>Material: Guld</p>
-                <p>Pris: 1050 kr</p>
+                <img src="/api/placeholder/300/300" alt="Vintage Örhängen">
+                <div class="product-details">
+                    <h3>Vintage Örhängen</h3>
+                    <p>Material: Silver</p>
+                    <p class="price">1 500 kr</p>
+                    <a href="#" class="btn btn-tertiary">Köp Nu</a>
+                </div>
             </div>
             <div class="product-card">
-                <img src="images/product4.jpg" alt="Armband">
-                <h3>Armband</h3>
-                <p>Material: Silver</p>
-                <p>Pris: 600 kr</p>
-            </div>
-            <div class="product-card">
-                <img src="images/product5.jpg" alt="Klocka">
-                <h3>Klocka</h3>
-                <p>Material: Silver</p>
-                <p>Pris: 12 000 kr</p>
-            </div>
-            <div class="product-card">
-                <img src="images/product6.jpg" alt="Halsband">
-                <h3>Halsband</h3>
-                <p>Material: Silver</p>
-                <p>Pris: 1200 kr</p>
+                <img src="/api/placeholder/300/300" alt="Art Deco Armband">
+                <div class="product-details">
+                    <h3>Art Deco Armband</h3>
+                    <p>Material: Guld</p>
+                    <p class="price">3 200 kr</p>
+                    <a href="#" class="btn btn-tertiary">Köp Nu</a>
+                </div>
             </div>
         </section>
     </main>
 
     <footer>
-        <div class="footer-columns">
-            <div class="footer-column">
-                <h3>KÖP</h3>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Ädelt</h4>
+                <p>Hållbara second hand smycken med själ och historia</p>
+            </div>
+            <div class="footer-section">
+                <h4>Snabblänkar</h4>
                 <ul>
-                    <li><a href="products.html">NYA FINDS</a></li>
-                    <li><a href="products.html">SMYCKEN</a></li>
-                    <li><a href="">KATEGORI</a></li>
+                    <li><a href="index.html">Hem</a></li>
+                    <li><a href="products.html">Produkter</a></li>
+                    <li><a href="about.html">Om Oss</a></li>
+                    <li><a href="sell.html">Sälj Smycken</a></li>
                 </ul>
             </div>
-            <div class="footer-column">
-                <h3>SÄLJ</h3>
-                <ul>
-                    <li><a href="sell.html">SÄLJ DITT SMYCKE</a></li>
-                    <li><a href="">SÅ FUNGERAR DET</a></li>
-                </ul>
-            </div>
-            <div class="footer-column">
-                <h3>HJÄLP</h3>
-                <ul>
-                    <li><a href="contact.html">KONTAKT</a></li>
-                    <li><a href="">VANLIGA FRÅGOR</a></li>
-                </ul>
-            </div>
-            <div class="footer-column">
-                <h3>INFORMATION</h3>
-                <ul>
-                    <li><a href="about.html">OM ÄDEL</a></li>
-                    <li><a href="">INTEGRITETSPOLICY</a></li>
-                    <li><a href="">VILLKOR</a></li>
-                </ul>
+            <div class="footer-section">
+                <h4>Kontakt</h4>
+                <p>E-post: info@adelt.se</p>
+                <p>Telefon: 070-123 45 67</p>
             </div>
         </div>
-        <div class="footer-info">
-            <p>Ädelt är en plattform där privatpersoner kan köpa och sälja second-hand smycken. Alla artiklar kommer
-                från privatpersoner.</p>
-        </div>
-        <div class="footer-copy">
-            <p>&copy; 2025 Ädelt. Alla rättigheter förbehållna.</p>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Ädelt. Alla rättigheter reserverade.</p>
         </div>
     </footer>
 
-    <script src="js/common.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
