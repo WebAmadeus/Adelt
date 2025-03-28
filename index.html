@@ -1,111 +1,204 @@
-<!DOCTYPE html>
 <html lang="sv">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ädelt – Hållbara second-hand smycken</title>
-    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/common.css">
+    <title>Ädelt - Hållbara Second Hand Smycken</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/animations.css">
 </head>
 
 <body>
-    <header>
-        <div class="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
+    <nav>
+        <div class="logo">
+            <span>Ädelt</span>
         </div>
-        <div class="logo">Ädelt</div>
-        <nav>
-            <ul class="nav-links">
-                <span class="close-menu">&times;</span>
-                <li><a href="index.html" class="active">Hem</a></li>
-                <li><a href="products.html">Produkter</a></li>
-                <li><a href="about.html">Om Oss</a></li>
-                <li><a href="contact.html">Kontakt</a></li>
-                <li><a href="sell.html">Sälj</a></li>
-            </ul>
-        </nav>
-    </header>
+        <ul class="nav-links">
+            <li><a href="index.html">Hem</a></li>
+            <li><a href="products.html">Produkter</a></li>
+            <li><a href="about.html" class="active">Om Oss</a></li>
+            <li><a href="sell.html">Sälj Smycken</a></li>
+            <li><a href="contact.html">Kontakt</a></li>
+        </ul>
+        <div class="nav-icons">
+            <div class="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
 
     <main>
-        <section class="hero">
-            <div class="hero-image">
-                <img src="images/hero.image.webp" alt="Hero bild">
-                <div class="hero-overlay">
-                    <h1>Välkommen till Ädelt</h1>
-                    <p>Hållbar lyx med historia. Upptäck unika second-hand smycken och ge dem ett nytt liv.</p>
-                    <a href="products.html" class="cta-button">Utforska Produkterna</a>
+        <section class="home-hero">
+            <div class="hero-content">
+                <img src="/api/placeholder/1200/600" alt="Ädelt Smycken Kollektion" class="hero-image">
+                <h1 class="hero-title">Hållbara Smycken med Historia</h1>
+                <p class="hero-subtitle">Återuppliva vintage, främja cirkulär ekonomi</p>
+                <div class="hero-cta">
+                    <a href="products.html" class="cta-button cta-primary">Visa Produkter</a>
+                    <a href="sell.html" class="cta-button cta-secondary">Sälj Dina Smycken</a>
                 </div>
             </div>
         </section>
-        <section class="hallbarhet">
-            <div class="hallbarhet-overlay">
-                <h2>Hållbarhet</h2>
-                <p>
-                    Våra smycken får ett nytt liv genom hållbart återbruk. Genom att köpa second-hand minskar du behovet
-                    av ny produktion, vilket sparar naturresurser och minskar miljöpåverkan. Återanvändning av
-                    ädelmetaller och ädelstenar bevarar våra värdefulla naturresurser och minskar de negativa effekterna
-                    av gruvdrift.
-                </p>
+
+        <section class="featured-section">
+            <h2>Våra Senaste Smycken</h2>
+            <div class="featured-grid">
+                <div class="featured-card">
+                    <h3>Vintage Halsband</h3>
+                    <img src="/api/placeholder/300/300" alt="Vintage Halsband">
+                    <p>Elegant vintage halsband från 1950-talet</p>
+                    <a href="products.html" class="button">Visa detaljer</a>
+                </div>
+                <div class="featured-card">
+                    <h3>Art Deco Armband</h3>
+                    <img src="/api/placeholder/300/300" alt="Art Deco Armband">
+                    <p>Exklusivt Art Deco armband i silver</p>
+                    <a href="products.html" class="button">Visa detaljer</a>
+                </div>
+                <div class="featured-card">
+                    <h3>Vintage Örhängen</h3>
+                    <img src="/api/placeholder/300/300" alt="Vintage Örhängen">
+                    <p>Unika örhängen från 1970-talet</p>
+                    <a href="products.html" class="button">Visa detaljer</a>
+                </div>
             </div>
         </section>
-        <section class="varfor-adelt">
-            <h2>Varför Ädelt?</h2>
-            <ol class="reasons-list">
-                <li><strong>Säkert:</strong> Vi verifierar varje smycke noggrant för att garantera att du får en äkta
-                    produkt.</li>
-                <li><strong>Hållbart:</strong> Genom återanvändning minskar vi avfall och bevarar naturresurser.</li>
-                <li><strong>Lätt att sälja:</strong> Vår plattform gör det enkelt att sälja dina smycken med en smidig
-                    process.</li>
-            </ol>
+
+        <section class="why-adelt-section">
+            <h2>Varför Välja Ädelt?</h2>
+
+            <p class="section-intro">Vår passion för hållbara smycken går långt bortom det estetiska. Vi tror på en
+                framtid där mode möter miljömedvetenhet, där varje smycke berättar en unik historia och bidrar till en
+                mer hållbar värld.</p>
+
+            <div class="reasons-grid">
+                <div class="reason-card">
+                    <h3>Miljövänligt</h3>
+                    <p>Modeindustrin är en av de största miljöbovarna globalt. Genom att fokusera på second hand smycken
+                        minskar vi den totala miljöpåverkan radikalt. Varje återanvänt smycke innebär mindre gruvdrift,
+                        mindre energiförbrukning och färre koldioxidutsläpp. Vi ser varje smycke som en möjlighet att
+                        göra en verklig skillnad för vår planet.</p>
+                </div>
+
+                <div class="reason-card">
+                    <h3>Cirkulär Ekonomi</h3>
+                    <p>Vår affärsmodell är byggd på principen om cirkulär ekonomi - ett system där resurser återanvänds
+                        och återvinns istället för att kasseras. Genom att ge second hand smycken nytt liv skapar vi en
+                        hållbar cykel som minskar avfall, sparar naturresurser och skapar nya möjligheter för både
+                        säljare och köpare.</p>
+                </div>
+
+                <div class="reason-card">
+                    <h3>Unik Historia</h3>
+                    <p>Varje smycke har en berättelse som sträcker sig bortom dess materiella värde. Från Art
+                        Deco-armband från 1920-talet till vintage örhängen från 1970-talet - varje piece bär på minnen,
+                        kulturell signifikans och autentisk charm. Genom att välja second hand ger du nytt liv åt dessa
+                        historiska skatter.</p>
+                </div>
+
+                <div class="reason-card">
+                    <h3>Prisvärt & Exklusivt</h3>
+                    <p>Second hand behöver inte betyda kompromiss med kvalitet. Tvärtom erbjuder vi högklassiga, unika
+                        smycken till priser som är betydligt mer överkomliga än nyproducerade. Vårt noggrant utvalda
+                        sortiment garanterar att du får exklusiva fynd till ett bättre pris.</p>
+                </div>
+            </div>
+
+            <div class="cta-container">
+                <a href="sell.html" class="cta-button cta-primary centered-button">Börja Sälja Dina Smycken</a>
+            </div>
+        </section>
+
+        <section class="how-to-sell-section">
+            <div class="section-header">
+                <h2>Hur Säljer Du Dina Smycken?</h2>
+                <p class="section-subtitle">Förvandla dina vintage skatter till nya möjligheter med Ädelt</p>
+            </div>
+
+            <div class="steps-container">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Förbered Dina Smycken</h3>
+                    <p>Börja med att noggrant gå igenom dina smycken. Rengör dem varsamt och dokumentera deras historia
+                        och
+                        ursprung. Ta högkvalitativa, skarpa bilder som visar smyckenas detaljer, eventuella märken och
+                        skick. Ju
+                        mer information du kan ge, desto större chans har du att sälja.</p>
+                    <ul class="step-details">
+                        <li>Rengör försiktigt</li>
+                        <li>Dokumentera historik</li>
+                        <li>Ta professionella bilder</li>
+                    </ul>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Fyll i Ansökan</h3>
+                    <p>Använd vår enkla och användarvänliga online-ansökningsprocess. Här fyller du i detaljerad
+                        information om
+                        dina smycken, inklusive ålder, material, märke och personlig historia. Var så detaljerad som
+                        möjligt för
+                        att ge potentiella köpare en fullständig bild.</p>
+                    <ul class="step-details">
+                        <li>Beskriv smyckenas historia</li>
+                        <li>Ange material och skick</li>
+                        <li>Ladda upp högkvalitativa bilder</li>
+                    </ul>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Få Svar</h3>
+                    <p>Vårt erfarna team granskar din ansökan noggrant. Vi värderar varje smycke unikt, med hänsyn till
+                        dess
+                        historia, skick och potential. Du får snabb återkoppling om vi är intresserade av att köpa eller
+                        sälja
+                        ditt smycke. Vårt mål är att ge dig en rättvis och transparent process.</p>
+                    <ul class="step-details">
+                        <li>Snabb professionell granskning</li>
+                        <li>Transparent värdering</li>
+                        <li>Personlig återkoppling</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="cta-container">
+                <a href="sell.html" class="cta-button cta-primary centered-button">Starta Din Smyckes-Resa</a>
+            </div>
         </section>
     </main>
+
     <footer>
-        <div class="footer-columns">
-            <div class="footer-column">
-                <h3>KÖP</h3>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Ädelt</h4>
+                <p>Hållbara second hand smycken med själ och historia</p>
+            </div>
+            <div class="footer-section">
+                <h4>Snabblänkar</h4>
                 <ul>
-                    <li><a href="products.html">NYA FINDS</a></li>
-                    <li><a href="products.html">SMYCKEN</a></li>
-                    <li><a href="">KATEGORI</a></li>
+                    <li><a href="index.html">Hem</a></li>
+                    <li><a href="products.html">Produkter</a></li>
+                    <li><a href="about.html">Om Oss</a></li>
+                    <li><a href="sell.html">Sälj Smycken</a></li>
                 </ul>
             </div>
-            <div class="footer-column">
-                <h3>SÄLJ</h3>
-                <ul>
-                    <li><a href="sell.html">SÄLJ DITT SMYCKE</a></li>
-                    <li><a href="">SÅ FUNGERAR DET</a></li>
-                </ul>
+            <div class="footer-section">
+                <h4>Kontakt</h4>
+                <p>E-post: info@adelt.se</p>
+                <p>Telefon: 070-123 45 67</p>
             </div>
-            <div class="footer-column">
-                <h3>HJÄLP</h3>
-                <ul>
-                    <li><a href="contact.html">KONTAKT</a></li>
-                    <li><a href="">VANLIGA FRÅGOR</a></li>
-                </ul>
-            </div>
-            <div class="footer-column">
-                <h3>INFORMATION</h3>
-                <ul>
-                    <li><a href="about.html">OM ÄDEL</a></li>
-                    <li><a href="">INTEGRITETSPOLICY</a></li>
-                    <li><a href="">VILLKOR</a></li>
-                </ul>
-            </div>
-            <div class="footer-info">
-                <p>Ädelt är en plattform där privatpersoner kan köpa och sälja second-hand smycken. Alla artiklar kommer
-                    från privatpersoner.</p>
-            </div>
-            <div class="footer-copy">
-                <p>&copy; 2025 Ädelt. Alla rättigheter förbehållna.</p>
-            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Ädelt. Alla rättigheter reserverade.</p>
+        </div>
     </footer>
 
-    <script src="js/common.js"></script>
-    <script src="js/index.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

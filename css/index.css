@@ -1,122 +1,347 @@
-.hero {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
+:root {
+    --primary-color: #2C3A47;
+    --secondary-color: #45B39D;
+    --accent-color: #F7B32D;
+    --background-color: #F4F6F7;
+    --text-color: #2C3E50;
 }
 
-.hero-image {
-    position: relative;
-}
-
-.hero-image img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.hero-overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: rgba(0, 0, 0, 0.4);
-    padding: 20px;
-    border-radius: 8px;
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    background: linear-gradient(135deg, rgba(69, 179, 157, 0.1), rgba(247, 179, 45, 0.1));
     text-align: center;
-    color: #F7E7CE;
+    padding: 2rem;
 }
 
-.hero-overlay h1 {
-    margin: 0 0 10px;
-    font-size: 2.5rem;
+.hero-content {
+    max-width: 800px;
+    color: var(--text-color);
 }
 
-.hero-overlay p {
-    margin: 0 0 20px;
-    font-size: 1.2rem;
+.hero-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: var(--secondary-color);
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
 }
 
 .cta-button {
-    background-color: #165A4A;
-    color: #D4AF37;
-    padding: 10px 20px;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
     text-decoration: none;
-    border-radius: 4px;
-    font-weight: bold;
-    transition: background 0.3s;
+    font-weight: 600;
+    margin: 1rem;
+    transition: all 0.3s ease;
 }
 
-.cta-button:hover {
-    background-color: #D4AF37;
-    color: #165A4A;
+.cta-primary {
+    background-color: var(--secondary-color);
+    color: white;
 }
 
-.hallbarhet {
+.cta-secondary {
+    background-color: transparent;
+    border: 2px solid var(--secondary-color);
+    color: var(--secondary-color);
+}
+
+.featured-products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 3rem 2rem;
+}
+
+.product-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.sustainability-section {
+    background-color: var(--background-color);
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.sustainability-icons {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.sustainability-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 200px;
+}
+
+@media screen and (max-width: 768px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+    }
+}
+
+.home-hero {
+    background: linear-gradient(135deg, rgba(69, 179, 157, 0.2), rgba(247, 179, 45, 0.2));
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--text-color);
+    padding: 2rem;
     position: relative;
-    width: 100%;
-    height: 300px;
-    background: url('../images/hallbarhet.jpg') no-repeat center center;
-    background-size: cover;
-    margin: 20px 0;
+    overflow: hidden;
 }
 
-.hallbarhet-overlay {
+.featured-section {
+    background-color: white;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.featured-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.featured-card {
+    background-color: var(--background-color);
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.featured-card:hover {
+    transform: translateY(-10px);
+}
+
+.sustainability-highlight {
+    background-color: var(--background-color);
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.how-it-works {
+    background-color: white;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.how-to-sell-section {
+    background-color: white;
+    padding: 5rem 2rem;
+    text-align: center;
+    border-top: 2px solid var(--background-color);
+    border-bottom: 2px solid var(--background-color);
+}
+
+.how-to-sell-section .section-header {
+    margin-bottom: 3rem;
+}
+
+.how-to-sell-section .section-subtitle {
+    max-width: 700px;
+    margin: 1rem auto;
+    color: var(--secondary-color);
+    font-size: 1.2rem;
+}
+
+.steps-container {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    margin-top: 2rem;
+}
+
+.step {
+    max-width: 350px;
+    background-color: var(--background-color);
+    padding: 2.5rem;
+    border-radius: 15px;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.step:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.step-number {
     position: absolute;
-    top: 50%;
+    top: -15px;
     left: 50%;
-    transform: translate(-50%, -50%);
-    background: rgba(0, 0, 0, 0.5);
-    padding: 20px;
-    border-radius: 8px;
-    color: #F7E7CE;
-    width: 80%;
-    max-width: 800px;
+    transform: translateX(-50%);
+    background-color: var(--secondary-color);
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.hallbarhet-overlay h2 {
-    margin-bottom: 10px;
-    font-size: 2rem;
+.step h3 {
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+    margin-top: 1.5rem;
 }
 
-.hallbarhet-overlay p {
-    font-size: 1.1rem;
-    line-height: 1.6;
+.step p {
+    color: var(--text-color);
+    line-height: 1.7;
+    margin-bottom: 1rem;
 }
 
-.varfor-adelt {
-    padding: 40px 20px;
-    background-color: #F7E7CE;
-    margin: 20px auto;
-    width: 80%;
-    border-radius: 8px;
-}
-
-.varfor-adelt h2 {
-    margin-bottom: 20px;
-}
-
-.reasons-list {
-    list-style: none;
+.step-details {
+    list-style-type: none;
     padding: 0;
     text-align: left;
-    max-width: 600px;
-    margin: 0 auto;
-    font-size: 1.1rem;
-    counter-reset: item;
+    color: var(--text-color);
 }
 
-.reasons-list li {
-    margin-bottom: 15px;
-    padding-left: 30px;
+.step-details li {
     position: relative;
+    padding-left: 25px;
+    margin-bottom: 0.5rem;
 }
 
-.reasons-list li::before {
-    content: counter(item) ". ";
-    counter-increment: item;
+.step-details li::before {
+    content: '•';
+    color: var(--secondary-color);
     position: absolute;
     left: 0;
-    top: 0;
-    font-weight: bold;
-    color: #D4AF37;
+    font-size: 1.5rem;
+    line-height: 1;
+}
+
+@media screen and (max-width: 768px) {
+    .steps-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .step {
+        max-width: 90%;
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+}
+
+.why-adelt-section {
+    background-color: var(--background-color);
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.why-adelt-section .section-intro {
+    max-width: 800px;
+    margin: 0 auto 3rem;
+    font-size: 1.2rem;
+    color: var(--text-color);
+    line-height: 1.8;
+}
+
+.reasons-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+.reason-card {
+    background-color: white;
+    border-radius: 12px;
+    padding: 2.5rem;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.reason-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.reason-card h3 {
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+}
+
+.reason-card p {
+    color: var(--text-color);
+    line-height: 1.7;
+}
+
+.cta-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.centered-button {
+    padding: 12px 24px;
+    font-size: 1.1rem;
+    background-color: var(--secondary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.centered-button:hover {
+    background-color: var(--primary-color);
+    transform: scale(1.05);
+}
+
+@media screen and (max-width: 768px) {
+    .why-adelt-section .section-intro {
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
+
+    .reasons-grid {
+        grid-template-columns: 1fr;
+    }
 }
