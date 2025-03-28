@@ -20,3 +20,4 @@ document.addEventListener('DOMContentLoaded', () => {
         alert('Tack för ditt meddelande! Vi återkommer snart.');
         contactForm.reset();
     });
+});
