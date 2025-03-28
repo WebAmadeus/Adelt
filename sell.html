@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ädelt – Sälj Ditt Smycke</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/sell.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <span>Ädelt</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Hem</a></li>
+            <li><a href="products.html">Produkter</a></li>
+            <li><a href="about.html" class="active">Om Oss</a></li>
+            <li><a href="sell.html">Sälj Smycken</a></li>
+            <li><a href="contact.html">Kontakt</a></li>
+        </ul>
+        <div class="nav-icons">
+            <div class="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="sell-page">
+        <section class="sell-header container">
+            <h1>Sälj Ditt Smycke</h1>
+            <p>Enkelt, säkert och hållbart</p>
+        </section>
+
+        <section class="sell-form container">
+            <form id="sell-application">
+                <div class="form-group">
+                    <label for="name">Namn</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-post</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="jewelry-type">Typ av Smycke</label>
+                    <select id="jewelry-type" name="jewelry-type" required>
+                        <option value="">Välj Typ</option>
+                        <option value="ring">Ring</option>
+                        <option value="necklace">Halsband</option>
+                        <option value="bracelet">Armband</option>
+                        <option value="earrings">Örhängen</option>
+                        <option value="watch">Klocka</option>
+                        <option value="other">Annat</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="description">Beskrivning av Smycke</label>
+                    <textarea id="description" name="description" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="image">Ladda upp Bild</label>
+                    <input type="file" id="image" name="image" accept="image/*" required>
+                </div>
+                <div class="form-group">
+                    <label for="estimated-value">Uppskattat Värde (kr)</label>
+                    <input type="number" id="estimated-value" name="estimated-value" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Skicka Ansökan</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Ädelt</h4>
+                <p>Hållbara second hand smycken med själ och historia</p>
+            </div>
+            <div class="footer-section">
+                <h4>Snabblänkar</h4>
+                <ul>
+                    <li><a href="index.html">Hem</a></li>
+                    <li><a href="products.html">Produkter</a></li>
+                    <li><a href="about.html">Om Oss</a></li>
+                    <li><a href="sell.html">Sälj Smycken</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Kontakt</h4>
+                <p>E-post: info@adelt.se</p>
+                <p>Telefon: 070-123 45 67</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Ädelt. Alla rättigheter reserverade.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/sell.js"></script>
+</body>
+
+</html>

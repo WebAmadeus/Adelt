@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ädelt – Kontakt</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <span>Ädelt</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Hem</a></li>
+            <li><a href="products.html">Produkter</a></li>
+            <li><a href="about.html" class="active">Om Oss</a></li>
+            <li><a href="sell.html">Sälj Smycken</a></li>
+            <li><a href="contact.html">Kontakt</a></li>
+        </ul>
+        <div class="nav-icons">
+            <div class="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="contact-page">
+        <section class="contact-header container">
+            <h1>Kontakta Oss</h1>
+            <p>Vi finns här för dig. Tveka inte att höra av dig!</p>
+        </section>
+
+        <section class="contact-form container">
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Namn</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-post</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Meddelande</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Skicka Meddelande</button>
+            </form>
+        </section>
+
+        <section class="contact-info container">
+            <div class="contact-details">
+                <h2>Kontaktuppgifter</h2>
+                <p>E-post: info@adelt.se</p>
+                <p>Telefon: 070-123 45 67</p>
+                <p>Adress: Hållbarhetsgatan 12, 123 45 Stockholm</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Ädelt</h4>
+                <p>Hållbara second hand smycken med själ och historia</p>
+            </div>
+            <div class="footer-section">
+                <h4>Snabblänkar</h4>
+                <ul>
+                    <li><a href="index.html">Hem</a></li>
+                    <li><a href="products.html">Produkter</a></li>
+                    <li><a href="about.html">Om Oss</a></li>
+                    <li><a href="sell.html">Sälj Smycken</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Kontakt</h4>
+                <p>E-post: info@adelt.se</p>
+                <p>Telefon: 070-123 45 67</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Ädelt. Alla rättigheter reserverade.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+
+</html>
