@@ -15,20 +15,21 @@
 }
 
 .hero-title {
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 700;
     margin-bottom: 1rem;
     color: var(--primary-color);
 }
 
 .hero-subtitle {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-bottom: 2rem;
     color: var(--secondary-color);
 }
 
 .cta-buttons {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     gap: 1rem;
 }
@@ -55,7 +56,7 @@
 
 .featured-products {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: 1fr;
     gap: 2rem;
     padding: 3rem 2rem;
 }
@@ -92,20 +93,6 @@
     max-width: 200px;
 }
 
-@media screen and (max-width: 768px) {
-    .hero-title {
-        font-size: 2rem;
-    }
-
-    .hero-subtitle {
-        font-size: 1.2rem;
-    }
-
-    .cta-buttons {
-        flex-direction: column;
-    }
-}
-
 .home-hero {
     background: linear-gradient(135deg, rgba(69, 179, 157, 0.2), rgba(247, 179, 45, 0.2));
     min-height: 90vh;
@@ -127,7 +114,7 @@
 
 .featured-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: 1fr;
     gap: 2rem;
     margin-top: 2rem;
 }
@@ -177,13 +164,16 @@
 
 .steps-container {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     gap: 2.5rem;
     margin-top: 2rem;
 }
 
 .step {
-    max-width: 350px;
+    max-width: 90%;
+    width: 100%;
+    margin-bottom: 2rem;
     background-color: var(--background-color);
     padding: 2.5rem;
     border-radius: 15px;
@@ -248,19 +238,6 @@
     line-height: 1;
 }
 
-@media screen and (max-width: 768px) {
-    .steps-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .step {
-        max-width: 90%;
-        width: 100%;
-        margin-bottom: 2rem;
-    }
-}
-
 .why-adelt-section {
     background-color: var(--background-color);
     padding: 5rem 2rem;
@@ -270,14 +247,15 @@
 .why-adelt-section .section-intro {
     max-width: 800px;
     margin: 0 auto 3rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
+    padding: 0 1rem;
     color: var(--text-color);
     line-height: 1.8;
 }
 
 .reasons-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: 1fr;
     gap: 2.5rem;
     margin-bottom: 3rem;
 }
@@ -327,13 +305,44 @@
     transform: scale(1.05);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 769px) {
+    .hero-title {
+        font-size: 3rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.5rem;
+    }
+
+    .cta-buttons {
+        flex-direction: row;
+    }
+
+    .featured-products {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .featured-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .steps-container {
+        flex-direction: row;
+        justify-content: center;
+        align-items: stretch;
+    }
+
+    .step {
+        max-width: 350px;
+        margin-bottom: 0;
+    }
+
     .why-adelt-section .section-intro {
-        font-size: 1rem;
-        padding: 0 1rem;
+        font-size: 1.2rem;
+        padding: 0;
     }
 
     .reasons-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
 }

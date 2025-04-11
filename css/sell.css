@@ -1,7 +1,7 @@
 .sell-page {
     max-width: 800px;
     margin: 0 auto;
-    padding: 2rem 1rem;
+    padding: 1rem 0.5rem;
 }
 
 .sell-header {
@@ -17,7 +17,7 @@
 
 .sell-form {
     background-color: var(--background-light);
-    padding: 2rem;
+    padding: 1rem;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -64,12 +64,12 @@
     background-color: var(--primary-color);
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 481px) {
     .sell-page {
-        padding: 1rem 0.5rem;
+        padding: 2rem 1rem;
     }
 
     .sell-form {
-        padding: 1rem;
+        padding: 2rem;
     }
 }
